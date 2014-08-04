@@ -80,7 +80,7 @@
 		rect = cont.view.frame;
 	}
 	
-    if([self.docController presentOpenInMenuFromRect:rect inView:cont.view animated:YES]) {
+    if([self.docController presentOptionsMenuFromRect:rect inView:cont.view animated:YES]) {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];	
     } else {
         NSLog(@"Nessuna app trovata per aprire il documento %@", localFile);
